@@ -1,5 +1,7 @@
 /* 深色模式样式
 ------------------------------- */
+// @use 'element-plus/theme-chalk/src/dark/css-vars.scss' as *;
+
 [data-theme='dark'] {
 	// 变量(自定义时，只需修改这里的值)
 	--next-bg-main: #1f1f1f;

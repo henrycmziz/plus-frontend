@@ -28,7 +28,7 @@
 				<div v-show="state.isShowLoockLogin" class="layout-lock-screen-login">
 					<div class="layout-lock-screen-login-box">
 						<div class="layout-lock-screen-login-box-img">
-							<img src="https://img2.baidu.com/it/u=1978192862,2048448374&fm=253&fmt=auto&app=138&f=JPEG?w=504&h=500" />
+							<img :src="avatar" />
 						</div>
 						<div class="layout-lock-screen-login-box-name">Administrator</div>
 						<div class="layout-lock-screen-login-box-value">
@@ -65,6 +65,7 @@ import { formatDate } from '/@/utils/formatTime';
 import { Local } from '/@/utils/storage';
 import { storeToRefs } from 'pinia';
 import { useThemeConfig } from '/@/stores/themeConfig';
+import avatar from '/@/assets/male-avatar.svg';
 
 // 定义变量内容
 const layoutLockScreenDateRef = ref<HtmlType>();
@@ -213,8 +214,12 @@ onUnmounted(() => {
 }
 .layout-lock-screen-img {
 	@extend .layout-lock-screen-fixed;
-	background-image: url('https://i.hd-r.cn/e4a19d84364f185266666765ac21a5db.jpg');
-	background-size: 100% 100%;
+	// background-image: url('/src/assets/lock-bg.jpg');
+	background: #6f3919; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2f5455, #6f3919); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2f5455, #6f3919); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	// background-size: 100% 100%;
 	z-index: 9999991;
 }
 .layout-lock-screen {

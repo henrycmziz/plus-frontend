@@ -1,6 +1,6 @@
 <template>
 	<div class="layout-navbars-breadcrumb-user pr15" :style="{ flex: layoutUserFlexNum }">
-		<el-dropdown :show-timeout="70" :hide-timeout="50" trigger="click" @command="onComponentSizeChange">
+		<!-- <el-dropdown :show-timeout="70" :hide-timeout="50" trigger="click" @command="onComponentSizeChange">
 			<div class="layout-navbars-breadcrumb-user-icon">
 				<i class="iconfont icon-ziti" title="组件大小"></i>
 			</div>
@@ -11,7 +11,7 @@
 					<el-dropdown-item command="small" :disabled="state.disabledSize === 'small'">小型</el-dropdown-item>
 				</el-dropdown-menu>
 			</template>
-		</el-dropdown>
+		</el-dropdown> -->
 		<div class="layout-navbars-breadcrumb-user-icon" @click="onSearchClick">
 			<el-icon title="菜单搜索">
 				<ele-Search />
@@ -20,13 +20,13 @@
 		<div class="layout-navbars-breadcrumb-user-icon" @click="onLayoutSetingClick">
 			<i class="icon-skin iconfont" title="布局配置"></i>
 		</div>
-		<div class="layout-navbars-breadcrumb-user-icon" ref="userNewsBadgeRef" v-click-outside="onUserNewsClick">
+		<!-- <div class="layout-navbars-breadcrumb-user-icon" ref="userNewsBadgeRef" v-click-outside="onUserNewsClick">
 			<el-badge :is-dot="true">
 				<el-icon title="消息">
 					<ele-Bell />
 				</el-icon>
 			</el-badge>
-		</div>
+		</div> -->
 		<el-popover
 			ref="userNewsRef"
 			:virtual-ref="userNewsBadgeRef"
@@ -57,7 +57,6 @@
 			<template #dropdown>
 				<el-dropdown-menu
 					><el-dropdown-item command="/home">首页</el-dropdown-item>
-					<el-dropdown-item command="wareHouse">代码仓库</el-dropdown-item>
 					<el-dropdown-item command="/404">404</el-dropdown-item>
 					<el-dropdown-item command="/401">401</el-dropdown-item>
 					<el-dropdown-item divided command="logOut">退出登录</el-dropdown-item>
@@ -160,8 +159,6 @@ const onHandleCommandClick = (path: string) => {
 				window.location.reload();
 			})
 			.catch(() => {});
-	} else if (path === 'wareHouse') {
-		window.open('https://gitee.com/lyt-top/vue-next-admin');
 	} else {
 		router.push(path);
 	}
@@ -186,7 +183,9 @@ const initI18nOrSize = (value: string, attr: string) => {
 onMounted(() => {
 	if (Local.get('themeConfig')) {
 		initI18nOrSize('globalComponentSize', 'disabledSize');
-	}
+  }
+  console.log();
+  
 });
 </script>
 

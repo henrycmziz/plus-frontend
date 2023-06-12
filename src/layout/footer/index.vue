@@ -1,8 +1,11 @@
 <template>
 	<div class="layout-footer pb15">
 		<div class="layout-footer-warp">
-			<div>vue-next-admin，Made by lyt with ❤️</div>
-			<div class="mt5">深圳市 xxx 公司版权所有</div>
+			<div>
+				Based on <a href="https://github.com/lyt-Top/vue-next-admin" target="_blank" rel="noreferrer noopener">vue-next-admin</a> &
+				<a href="https://github.com/dromara/RuoYi-Vue-Plus" target="_blank" rel="noreferrer noopener">RuoYi-Vue-Plus</a> 🙂
+			</div>
+			<div class="mt5">©2023 henrycmziz</div>
 		</div>
 	</div>
 </template>
@@ -20,6 +23,11 @@
 		color: var(--el-text-color-secondary);
 		text-align: center;
 		animation: error-num 0.3s ease;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: underline;
 	}
 }
 </style>

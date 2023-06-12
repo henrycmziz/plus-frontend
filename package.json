@@ -1,8 +1,8 @@
 {
-	"name": "vue-next-admin-template",
+	"name": "plus-frontend-template",
 	"version": "2.4.33",
-	"description": "vue3 vite next admin template",
-	"author": "lyt_20201208",
+	"description": "Based on vue-next-admin",
+	"author": "lyt_20201208, henrychang",
 	"license": "MIT",
 	"scripts": {
 		"dev": "vite --force",
@@ -51,7 +51,7 @@
 		"not dead"
 	],
 	"bugs": {
-		"url": "https://gitee.com/lyt-top/vue-next-admin/issues"
+		"url": "https://github.com/henrycmziz/plus-frontend/issues"
 	},
 	"engines": {
 		"node": ">=16.0.0",
@@ -64,11 +64,10 @@
 		"vuejs/vue-next-template",
 		"element-ui",
 		"element-plus",
-		"vue-next-admin",
-		"next-admin"
+		"plus-frontend"
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://gitee.com/lyt-top/vue-next-admin.git"
+		"url": "https://github.com/henrycmziz/plus-frontend.git"
 	}
 }

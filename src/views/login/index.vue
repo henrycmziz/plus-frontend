@@ -2,9 +2,9 @@
 	<div class="login-container flex">
 		<div class="login-left">
 			<div class="login-left-logo">
-				<img :src="logoMini" />
+				<!-- <img :src="logoMini" /> -->
 				<div class="login-left-logo-text">
-					<span>{{ getThemeConfig.globalViceTitle }}</span>
+					<!-- <span>{{ getThemeConfig.globalViceTitle }}</span> -->
 					<span class="login-left-logo-text-msg">{{ getThemeConfig.globalViceTitleMsg }}</span>
 				</div>
 			</div>
@@ -104,7 +104,7 @@ onMounted(() => {
 					color: #26a59a;
 				}
 				.login-left-logo-text-msg {
-					font-size: 12px;
+					font-size: 16px;
 					color: #32a99e;
 				}
 			}
@@ -129,10 +129,10 @@ onMounted(() => {
 		}
 	}
 	.login-right {
-		width: 700px;
+		width: 800px;
 		.login-right-warp {
-			border: 1px solid var(--el-color-primary-light-3);
-			border-radius: 3px;
+			// border: 1px solid var(--el-color-primary-light-3);
+			border-radius: 8px;
 			width: 500px;
 			height: 500px;
 			position: relative;
@@ -158,8 +158,8 @@ onMounted(() => {
 					left: 0;
 					width: 100%;
 					height: 3px;
-					background: linear-gradient(90deg, transparent, var(--el-color-primary));
-					animation: loginLeft 3s linear infinite;
+					// background: linear-gradient(90deg, transparent, var(--el-color-primary));
+					// animation: loginLeft 3s linear infinite;
 				}
 				&::after {
 					filter: hue-rotate(60deg);
@@ -167,9 +167,9 @@ onMounted(() => {
 					right: 2px;
 					width: 3px;
 					height: 100%;
-					background: linear-gradient(180deg, transparent, var(--el-color-primary));
-					animation: loginTop 3s linear infinite;
-					animation-delay: 0.7s;
+					// background: linear-gradient(180deg, transparent, var(--el-color-primary));
+					// animation: loginTop 3s linear infinite;
+					// animation-delay: 0.7s;
 				}
 			}
 			.login-right-warp-two {
@@ -179,9 +179,9 @@ onMounted(() => {
 					right: -100%;
 					width: 100%;
 					height: 3px;
-					background: linear-gradient(270deg, transparent, var(--el-color-primary));
-					animation: loginRight 3s linear infinite;
-					animation-delay: 1.4s;
+					// background: linear-gradient(270deg, transparent, var(--el-color-primary));
+					// animation: loginRight 3s linear infinite;
+					// animation-delay: 1.4s;
 				}
 				&::after {
 					filter: hue-rotate(300deg);
@@ -189,9 +189,9 @@ onMounted(() => {
 					left: 0px;
 					width: 3px;
 					height: 100%;
-					background: linear-gradient(360deg, transparent, var(--el-color-primary));
-					animation: loginBottom 3s linear infinite;
-					animation-delay: 2.1s;
+					// background: linear-gradient(360deg, transparent, var(--el-color-primary));
+					// animation: loginBottom 3s linear infinite;
+					// animation-delay: 2.1s;
 				}
 			}
 			.login-right-warp-mian {

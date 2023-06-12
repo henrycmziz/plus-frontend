@@ -42,6 +42,7 @@ declare interface RoutesListState<T = any> {
 // 布局配置
 declare interface ThemeConfigState {
 	themeConfig: {
+		[key: string]: string | boolean | number;
 		isDrawer: boolean;
 		primary: string;
 		topBar: string;

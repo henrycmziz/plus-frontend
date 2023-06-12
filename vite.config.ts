@@ -54,7 +54,9 @@ const viteConfig = defineConfig((mode: ConfigEnv) => {
 				...(JSON.parse(env.VITE_OPEN_CDN) ? { external: buildConfig.external } : {}),
 			},
 		},
-		css: { preprocessorOptions: { css: { charset: false } } },
+		css: {
+			preprocessorOptions: { css: { charset: false } },
+		},
 		define: {
 			__NEXT_VERSION__: JSON.stringify(process.env.npm_package_version),
 			__NEXT_NAME__: JSON.stringify(process.env.npm_package_name),
